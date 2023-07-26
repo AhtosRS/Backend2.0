@@ -91,31 +91,6 @@ class ProductManager {
 
 }
 
-const productManager = new ProductManager('productos.json');
+//const productManager = new ProductManager('productos.json');
 
-const initialProducts = productManager.getProducts();
-console.log('Productos iniciales:', initialProducts);
-
-const newProductId = productManager.addProduct({
-  title: 'producto prueba',
-  description: 'Este es un producto prueba',
-  price: 200,
-  thumbnail: 'Sin imagen',
-  code: 'abc123',
-  stock: 25
-});
-
-const recienAgregado = productManager.getProducts().slice(-1);
-console.log('Nuevo producto agregado. ID:', recienAgregado);
-
-const productPorID = productManager.getProductById(1);
-console.log(productPorID);
-
-const update = productManager.updateProduct(1, {price: 999});
-const testUpdated = productManager.getProductById(1);
-console.log(testUpdated);
-
-productManager.deleteProduct(1);
-const resultado = productManager.getProducts()
-console.log(resultado);
-
+module.exports = ProductManager;
