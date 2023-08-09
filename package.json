@@ -1,25 +1,18 @@
 {
-  "name": "desafio-3",
+  "name": "pre_entrega_1",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AhtosRS/Backend2.0.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AhtosRS/Backend2.0/issues"
-  },
-  "homepage": "https://github.com/AhtosRS/Backend2.0#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "moment": "^2.29.4"
-  },
-  "devDependencies": {},
-  "keywords": [],
-  "description": ""
+    "express-handlebars": "^7.1.2",
+    "fs": "^0.0.1-security",
+    "socket.io": "^4.7.2"
+  }
 }
